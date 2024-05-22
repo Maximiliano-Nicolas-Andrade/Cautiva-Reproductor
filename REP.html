@@ -4,7 +4,7 @@
 <head>
     <title>Reproductor CAUTIVA</title>
     <style>
-         body {
+body {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,6 +20,16 @@
             border-radius: 15px;
             margin-bottom: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        @media screen and (max-width: 600px) {
+            video {
+                width: 100%;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            video {
+                width: 100%;
+            }
         }
         #videoInput {
             display: none;
