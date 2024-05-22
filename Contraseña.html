@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verificación de Contraseña</title>
+<style type="text/css">
+    /* CRITICAL CSS = Faster Load Time :) */
+    body {
+        line-height: 1;
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background: linear-gradient(to right, #ffffff, #0000ff8f);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .container {
+        text-align: center;
+    }
+    #password {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+</style>
+</head>
+<body>
+    <img src="Cautiva.png" alt="">
+    <div class="container">
+        <h1>Verificación de Contraseña</h1>
+        <label for="password">Ingresa la contraseña:</label><br>
+        <input type="password" id="password"><br>
+        <button onclick="togglePasswordVisibility()">Mostrar/Ocultar Contraseña</button><br>
+        <button onclick="verificarContraseña()">Verificar</button>
+        <p id="mensaje"></p>
+    </div>
+        
+    <script>
+    function verificarContraseña() {
+        var contraseñaIngresada = document.getElementById("password").value;
+        var contraseñaCorrecta = "mondongo13";
+    
+        if (contraseñaIngresada === contraseñaCorrecta) {
+            alert("Contraseña correcta. Redirigiendo a otra página.");
+            window.location.href = "REP.html"; // Cambiar a la URL de la otra página
+        } else {
+            document.getElementById("mensaje").textContent = "Contraseña incorrecta. Por favor, intenta de nuevo.";
+        }
+    }
+
+    function togglePasswordVisibility() {
+        var passwordField = document.getElementById("password");
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+        } else {
+            passwordField.type = "password";
+        }
+    }
+    </script>
+    <footer>
+        <h2>CAUTIVA Studio/Marketing y Diseño Grafico</h2>
+    </footer>
+
+</body>
+</html>
