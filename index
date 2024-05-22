@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Cautiva Reproductor de Video</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Duotone is a Spotify Inspired Website Template for Musicians, Bands, and DJ&#39;s. It comes with Onepage and Multipage versions. Feel free to checkout the demo.">
+<meta property="og:title" content="Duotone Music and Band Website Template">
+<meta property="og:description" content="Duotone is a Spotify Inspired Website Template for Musicians, Bands, and DJ&#39;s. It comes with Onepage and Multipage versions. Feel free to checkout the demo.">
+<meta name="twitter:card" content="summary">
+<script src="/cdn-cgi/apps/head/C484em-bjcyOw4grJ6SRyHJ29c8.js"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700%7CPlayfair+Display:regular,700,900&amp;subset=latin,cyrillic">
+
+
+<style type="text/css">
+    /* CRITICAL CSS = Faster Load Time :) */
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body,
+    div,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+    
+    body {
+        line-height: 1;
+        font-size: 16px;
+        font-family: 'Playfair Display', Georgia, Sans-serif;
+    }
+    
+    a {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+    /*Landing Style*/
+    
+    header {
+        background: linear-gradient(to right, #ffffff, #3653f8);
+    padding: 80px 0 100px;
+    margin-bottom: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    h1 {
+        font-size: 50px;
+        margin: 20px 40px;
+    }
+    
+    .lead {
+        font-size: 24px;
+        max-width: 800px;
+        line-height: 1.4;
+        margin: 0 auto;
+    }
+    
+    .logo {
+        margin-bottom: 30px;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 17px 40px;
+        border-radius: 30px;
+        background-color: #3898EC;
+        color: white;
+        border: 0;
+        line-height: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    
+    .btn:hover,
+    .btn:focus,
+    .btn:active {
+        opacity: 0.8;
+    }
+    
+    .featured-btn {
+        margin: 42px 15px 0 15px;
+        background-color: #f037a5;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .btn-green {
+        background-color: #19e68c;
+    }
+    
+    .btn-blue {
+        background-color: #34397e;
+    }
+    
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .container:before,
+    .row:before {
+        content: " ";
+        display: table;
+    }
+    
+    .container:after,
+    .row:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+    
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    
+    .col {
+        position: relative;
+        float: left;
+        width: 100%;
+        min-height: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .col-half {
+        width: 50%;
+    }
+    
+    @media (max-width: 767px) {
+        .col-half {
+            width: 100%;
+        }
+    }
+    
+    .img-hover {
+        margin: 0 30px 100px;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    
+    .img-hover:hover {
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+        -webkit-box-shadow: 5px 10px 80px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 5px 10px 80px rgba(0, 0, 0, 0.5);
+        box-shadow: 5px 10px 80px rgba(0, 0, 0, 0.5);
+    }
+    
+    .img-hover .overlay {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background: rgba(0, 0, 0, 0.7);
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    .valign {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 25px;
+    }
+    
+    .img-hover a {
+        display: block;
+    }
+    
+    .img-hover:hover .overlay {
+        opacity: 1;
+    }
+    
+    .img-hover img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .footer {
+        text-align: center;
+        padding: 50px 0;
+        color: #333;
+    }
+    </style>
+
+<script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window,
+        document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1530003103982991'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1530003103982991&ev=PageView&noscript=1" /></noscript>
+
+
+</head>
+<body>
+<header>
+<div class="container">
+<img src="Cautiva.png" alt="Duotone Logo" class="logo" />
+<h1>Reproductor de Video Cautiva</h1>
+<p class="lead">Descubre una experiencia audiovisual sin límites en nuestro sitio web de reproductor de video, donde la calidad se une a la comodidad en un solo clic.</p>
+<a href="https://goo.gl/9zRpe9" target="_blank" class="btn featured-btn btn-green">cargar video</a> <a href="#demos" class="btn featured-btn btn-blue">contacto</a>
+</div>
+</header>
+<center><h1>Seleccione su Empresa</h1></center>
+<div class="container" id="demos">
+<div class="row">
+<div class="col col-half">
+<a href="Contraseña.html">
+<div class="img-hover">
+<img src="Cautiva.png" alt="One Page Version" />
+<div class="overlay"><span class="valign">Cautiva</span></div>
+
+</div>
+
+</a>
+</div>
+
+<div class="col col-half">
+<a href="contraseña_barberos.html">
+<div class="img-hover">
+<img src="Barberos.png" alt="Multi Page Version" />
+<div class="overlay"><span class="valign">Barberos</div>
+
+</div>
+
+</a>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col">
+<a href="https://demo.web3canvas.com/themeforest/duotone/event-countdown.html">
+<div class="img-hover">
+<img src="NNTech.png" alt="Event Countdown" />
+<div class="overlay"><span class="valign">NN Technology</span></div>
+
+</div>
+
+</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">CAUTIVA Studio/Marketing y Diseño Grafico</div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vedd3670a3b1c4e178fdfb0cc912d969e1713874337387" integrity="sha512-EzCudv2gYygrCcVhu65FkAxclf3mYM6BCwiGUm6BEuLzSb5ulVhgokzCZED7yMIkzYVg65mxfIBNdNra5ZFNyQ==" data-cf-beacon='{"rayId":"886d5eddbba7a795","r":1,"version":"2024.4.1","token":"1a2187940c214caa9d3fed19b4904902"}' crossorigin="anonymous"></script>
+</body>
+</html>
